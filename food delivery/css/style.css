@@ -1,0 +1,249 @@
+/* CSS reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+/* Navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    left:0px;
+
+}
+
+#logo {
+    margin: -57px -34px;
+}
+
+#logo img {
+    height: 179px;
+
+    margin: 20px 20px;
+
+}
+
+
+
+#navbar ul {
+    display: flex;
+    font-family: "Bree Serif", serif;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 0px 34px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+
+    height: 399px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url("../img/bg1.jpeg") no-repeat center/cover;
+    height: 92%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    color: white;
+    margin: 10px;
+    padding: 12px;
+    font-family: "Balsamiq Sans", sans-serif;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Balsamiq Sans", sans-serif;
+
+}
+
+/* services section */
+#services .box p {
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+#services-container {
+    margin: 150px 0px;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid rgb(155, 139, 139);
+    margin: 20px 4px;
+    padding: 10px;
+    border-radius: 28px;
+    background-color: rgb(243, 240, 240);
+
+
+}
+
+#services .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+
+/* #services */
+
+/* client section  */
+#client-section {
+    position: relative;
+    height: 344px;
+
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url("/img/bg3.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.client-item {
+    padding: 40px;
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 150px;
+}
+
+/* Contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url(/img/contact.jpg) no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border:1px solid black;
+    background-color: aliceblue;
+
+}
+
+#contact-box form {
+    width: 50%;
+
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: "Balsamiq Sans", sans-serif;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 4px 20px;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-size: 3.2rem;
+    text-align: center;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.h-secondary {
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.btn {
+    padding: 6px;
+    margin: 19px 21px;
+    color: white;
+    background-color: rgb(232, 45, 45);
+    border: 2px solid rgb(232, 45, 45);
+    border-radius: 14px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
