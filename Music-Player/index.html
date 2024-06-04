@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left flex border">
+            <div class="close">
+                <img class="invert" src="img/close.svg" alt="">
+            </div>
+            <div class="home flex bg-grey ">
+
+                <ul id="logo-ul">
+                    <li class="logo"><img src="img/logo.svg" class="invert logo" alt="logo">
+                    </li>
+                    <li><img src="img/home.svg" class="invert home-icons" style="margin-right: 10px;" alt="home">Home</li>
+                    <li><img src="img/search.svg" class="invert home-icons" alt="search" style="margin-right: 10px;">Search
+                    </li>
+                </ul>
+            </div>
+            <div class="library bg-grey ">
+
+
+                <div class="library-title logo"><img src="img/playlist.svg" class="invert home-icons" alt="library">
+                    <h2>Your library</h2>
+                </div>
+
+                <div class="card-playlist bg-grey">
+                    <div class="songList">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footer-element"><a target="_blank" href="https://www.spotify.com/jp/legal/">Legal</a>
+                    </div>
+                    <div class="footer-element"><a target="_blank" href="https://www.spotify.com/jp/privacy/">Privacy
+                            Center</a></div>
+                    <div class="footer-element"><a target="_blank"
+                            href="https://www.spotify.com/jp/legal/privacy-policy/">Privacy
+                            Policy</a>
+                    </div>
+                    <div class="footer-element"><a target="_blank"
+                            href="https://www.spotify.com/jp/legal/cookies-policy/">Cookies</a>
+                    </div>
+                    <div class="footer-element"><a target="_blank"
+                            href="https://www.spotify.com/jp/legal/privacy-policy/#s3">About
+                            Ads</a></div>
+                    <div class="footer-element"><a target="_blank"
+                            href="https://www.spotify.com/jp/accessibility/">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right flex border">
+            <header>
+                <nav class="navbar bg-grey">
+
+                    <div class="nav-controls flex align-items invert home-icons">
+                        <img class="hamburger" " src="img/hamburger.svg" alt="">
+                        <img src="img/previoussong.svg" alt="back">
+                        <img src="img/nextsong.svg" alt="previous">
+                    </div>
+                    <div class="buttons flex"><button class="signup bg-grey
+                        ">Sign up</button><button class="login">Log in</button></div>
+                </nav>
+            </header>
+            <div class="spotify-playlists">
+                <h2>Spotify Playlists</h2>
+
+                <div class="card-container flex  ">
+                    <div data-folder="angry" class="cards flex bg-grey">
+                        <img src="img/cover.jpg" alt="">
+                        <h>Angry Mood</h>
+                        <p> Lorem, ipsum.</p>
+                    </div>
+                    <div data-folder="chill" class="cards flex bg-grey">
+                        <img src="img/cover (2).jpg" alt="">
+                        <h> Chill Mood</h>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    
+                    <div data-folder="relax" class="cards flex bg-grey">
+                        <img src="img/cover (3).jpg" alt="">
+                        <h> Relax</h>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    <div data-folder="diljit" class="cards flex bg-grey">
+                        <img src="img/cover (4).jpg" alt="">
+                        <h>Diljit Paji</h>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    <div data-folder="karanaujla" class="cards flex bg-grey">
+                        <img src="img/cover (5).jpg" alt="">
+                        <h> Karan Aujla</h>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    <div data-folder="funky" class="cards flex bg-grey">
+                        <img src="img/cover (6).jpg" alt="">
+                        <h>Funky Mood</h>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    <div data-folder="nature" class="cards flex bg-grey">
+                        <img src="img/cover (7).jpg" alt="">
+                        <h>Nature</h>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    
+                </div>
+                <div class="playbar">
+                    <div class="abovebar">
+                        <div class="song-info invert"></div>
+                        <div class="controls">
+                            <img id="previous" src="img/previoussong.svg" alt="">
+                            <img id="play" src="img/play.svg" alt="">
+                            <img id="next" src="img/nextsong.svg" alt="">
+                        </div>
+                        <div class="timevol">
+                            <div class="song-time invert">
+                            </div>
+                            <img src="img/volume.svg" width="20px" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>
